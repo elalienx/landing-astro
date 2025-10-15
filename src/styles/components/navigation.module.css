@@ -15,7 +15,7 @@
   .link {
     background-color: white;
     text-decoration: none;
-    color: var(--color-green);
+    color: var(--color-green-dark);
     border-radius: var(--border-radius);
     padding: var(--space-small);
   }
