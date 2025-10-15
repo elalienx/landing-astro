@@ -2,6 +2,15 @@
 .mobile {
   background-color: pink;
   color: maroon;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .badge {
+    width: 160px;
+  }
 }
 
 .desktop {
