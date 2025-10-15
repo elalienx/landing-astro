@@ -16,7 +16,7 @@ import "@styles/base/variables.css"
 		<title>Astro Landing</title>
 	</head>
 	<body>
-		<Navigation/>
+		<Navigation currentPath={Astro.url.pathname}/>
 		<slot />
 	</body>
 </html>

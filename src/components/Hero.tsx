@@ -8,13 +8,12 @@ export default function Hero({ product }: Props) {
   return (
     <header className={styles.hero}>
       <div className={styles.content}>
-        <h1>Hackathon 2025 🎃</h1>
-        <h2>{product}</h2>
+        <h1>{product}</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui
-          totam, deserunt velit omnis ratione sequi accusantium rem adipisci est
-          consequuntur ad esse quia. Nulla maiores voluptatem id voluptates hic.
+          totam, deserunt velit omnis ratione sequi.
         </p>
+        <p>Hackathon 2025 🎃</p>
       </div>
     </header>
   );

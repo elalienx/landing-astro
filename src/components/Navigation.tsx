@@ -1,17 +1,25 @@
 import styles from "@styles/components/navigation.module.css";
 
-export default function Navigation() {
+interface Props {
+  currentPath: string;
+}
+
+export default function Navigation({ currentPath }: Props) {
+  const consumerActive = currentPath === "/" ? styles.active : "";
+  const bussinesActive = currentPath === "/business" ? styles.active : "";
+  const mortgageActive = currentPath === "/mortgage" ? styles.active : "";
+
   return (
     <nav className={styles.navigation}>
-      <span className="logo">Lendo</span>
+      <img src="./logo.svg" />
       <div className={styles.links}>
-        <a href="/" className={styles.link}>
+        <a href="/" className={`${styles.link} ${consumerActive}`}>
           Privat
         </a>
-        <a href="/business" className={styles.link}>
+        <a href="/business" className={`${styles.link} ${bussinesActive}`}>
           Foregslatan
         </a>
-        <a href="/mortgage" className={styles.link}>
+        <a href="/mortgage" className={`${styles.link} ${mortgageActive}`}>
           Bolan
         </a>
       </div>
