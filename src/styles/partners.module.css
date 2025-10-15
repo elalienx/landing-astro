@@ -1,4 +1,6 @@
 .partners {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 64px 32px;
   text-align: center;
   background-color: aliceblue;

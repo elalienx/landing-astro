@@ -7,7 +7,7 @@ interface Props {
 export default function Hero({ product }: Props) {
   return (
     <header className={styles.hero}>
-      <div className="content">
+      <div className={styles.content}>
         <h1>Hackathon 2025 🎃</h1>
         <h2>{product}</h2>
         <p>

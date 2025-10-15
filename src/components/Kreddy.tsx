@@ -49,13 +49,21 @@ function Desktop() {
           krediter och vill du ha hjälp att samla dem via Lendo sà hjälper vi
           dig med din ansökan. Allt i Kreddy-appen är gratis.
         </p>
-        <div>
+
+        {/* Call to Action */}
+        <div className={styles.callToAction}>
           <p>Scanna QR-koden med mobilkameran för att ladda ner appen</p>
           <img src="./kreddy/arrow.svg" loading="lazy" />
           <img src="./kreddy/qrcode-lendose.svg" loading="lazy" />
         </div>
       </div>
-      <img src="./kreddy/app-banner.webp" loading="lazy" />
+
+      {/* Image */}
+      <img
+        className={styles.image}
+        src="./kreddy/app-banner.webp"
+        loading="lazy"
+      />
     </section>
   );
 }
