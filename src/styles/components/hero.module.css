@@ -1,8 +1,10 @@
+@value colorBlack from "../base/variables.module.css";
+
 .hero {
   display: grid;
   place-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: colorBlack;
   color: white;
   text-align: center;
 

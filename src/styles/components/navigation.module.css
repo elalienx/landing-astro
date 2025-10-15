@@ -2,20 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
-  background-color: green;
+  padding: var(--space-small);
+  background-color: var(--color-green);
   color: white;
 
   .links {
     display: flex;
-    gap: 16px;
+    gap: var(--space-medium);
   }
 
   .link {
     background-color: white;
     text-decoration: none;
     color: green;
-    border-radius: 8px;
+    border-radius: borderRadius;
     padding: 8px;
   }
 }
