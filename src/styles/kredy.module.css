@@ -1,0 +1,22 @@
+/* Mobile */
+.mobile {
+  background-color: pink;
+  color: maroon;
+}
+
+.desktop {
+  display: none;
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: initial;
+    background-color: aliceblue;
+    color: navy;
+  }
+}

@@ -2,16 +2,15 @@
 // Components
 import Hero from "../components/Hero"
 import IncrementalCounter from '../components/IncrementalCounter';
-import KreddyMobile from "../components/KreddyMobile"
-import KreddyDesktop from "../components/KreddyDesktop"
+import Kreddy from "../components/Kreddy"
 
 // Layouts
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<IncrementalCounter client:load label='How many videogames have you purchased this year?'/>
 	<Hero/>
-	<KreddyMobile />
-	<KreddyDesktop />
+	<Kreddy />
+	<IncrementalCounter client:visible label='How many videogames have you purchased this year?'/>
 </Layout>
+
