@@ -20,11 +20,13 @@ export default function Partners() {
 
   return (
     <section className={styles.partners}>
-      <h2>Våra samarbetspartners</h2>
-      {showPartners && Logos}
-      <button onClick={() => setShowPartners(!showPartners)}>
-        Se fler partners
-      </button>
+      <div className={styles.content}>
+        <h2>Våra samarbetspartners</h2>
+        {showPartners && Logos}
+        <button onClick={() => setShowPartners(!showPartners)}>
+          Se fler partners
+        </button>
+      </div>
     </section>
   );
 }
