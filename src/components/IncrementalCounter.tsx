@@ -10,7 +10,10 @@ export default function IncrementalCounter({ label }: Props) {
   const [value, setValue] = useState(0);
 
   return (
-    <div>
+    <div
+      className="incremental-counter"
+      style={{ backgroundColor: "green", color: "white" }}
+    >
       {/* Title */}
       <span>{label}</span>
 
