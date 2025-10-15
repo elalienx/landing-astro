@@ -7,6 +7,12 @@
     max-width: 960px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     gap: 32px;
+
+    input {
+      text-align: center;
+      width: 64px;
+    }
   }
 }

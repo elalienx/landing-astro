@@ -22,7 +22,6 @@ export default function IncrementalCounter({ label }: Props) {
             -
           </button>
           <input
-            type="number"
             pattern="\d*"
             value={value}
             onChange={(event) => setValue(Number(event.target.value))}
