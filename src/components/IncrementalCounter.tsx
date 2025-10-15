@@ -19,7 +19,7 @@ export default function IncrementalCounter({ label }: Props) {
         {/* Controls */}
         <div className="controls">
           <button onClick={() => setValue(value - 1)} disabled={value <= 0}>
-            -
+            ➖
           </button>
           <input
             pattern="\d*"
@@ -27,7 +27,7 @@ export default function IncrementalCounter({ label }: Props) {
             onChange={(event) => setValue(Number(event.target.value))}
           />
           <button onClick={() => setValue(value + 1)} disabled={value >= 10}>
-            +
+            ➕
           </button>
         </div>
       </div>
