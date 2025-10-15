@@ -1,4 +1,4 @@
-import styles from "../styles/hero.module.css";
+import styles from "@styles/components/hero.module.css";
 
 interface Props {
   product: string;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from "../styles/incremental-counter.module.css";
+import styles from "@styles/components/incremental-counter.module.css";
 
 interface Props {
   /** The title to show on the component. */

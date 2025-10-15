@@ -1,4 +1,4 @@
-import styles from "../styles/navigation.module.css";
+import styles from "@styles/components/navigation.module.css";
 
 export default function Navigation() {
   return (

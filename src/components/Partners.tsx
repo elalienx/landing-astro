@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from "../styles/partners.module.css";
+import styles from "@styles/components/partners.module.css";
 
 export default function Partners() {
   const [showPartners, setShowPartners] = useState(false);

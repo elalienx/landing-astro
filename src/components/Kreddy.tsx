@@ -1,4 +1,4 @@
-import styles from "../styles/kredy.module.css";
+import styles from "@styles/components/kredy.module.css";
 
 export default function Kreddy() {
   return (
