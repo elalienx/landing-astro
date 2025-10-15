@@ -1,18 +1,26 @@
 .incrementalCounter {
-  background-color: green;
+  background-color: var(--color-green-dark);
   color: white;
-  padding: 32px;
+  padding: var(--space-big);
 
   .content {
     max-width: 960px;
-    margin: 0 auto;
+    margin-inline: auto;
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    align-items: center;
+  }
+
+  .controls {
+    display: flex;
+    gap: var(--space-small);
 
     input {
       text-align: center;
       width: 64px;
+      height: 44px;
+      border-radius: var(--border-radius);
+      border: none;
     }
   }
 }

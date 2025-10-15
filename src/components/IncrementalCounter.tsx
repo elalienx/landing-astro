@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import styles from "@styles/components/incremental-counter.module.css";
+import buttons from "@styles/components/buttons.module.css";
 
 interface Props {
   /** The title to show on the component. */
@@ -17,17 +18,25 @@ export default function IncrementalCounter({ label }: Props) {
         <span>{label}</span>
 
         {/* Controls */}
-        <div className="controls">
-          <button onClick={() => setValue(value - 1)} disabled={value <= 0}>
-            ➖
+        <div className={styles.controls}>
+          <button
+            className={buttons.circle}
+            onClick={() => setValue(value - 1)}
+            disabled={value <= 0}
+          >
+            -
           </button>
           <input
             pattern="\d*"
             value={value}
             onChange={(event) => setValue(Number(event.target.value))}
           />
-          <button onClick={() => setValue(value + 1)} disabled={value >= 10}>
-            ➕
+          <button
+            className={buttons.circle}
+            onClick={() => setValue(value + 1)}
+            disabled={value >= 10}
+          >
+            +
           </button>
         </div>
       </div>

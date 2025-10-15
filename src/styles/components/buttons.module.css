@@ -1,0 +1,27 @@
+.primary {
+  min-height: 44px;
+  padding: var(--space-medium) var(--space-big);
+  background-color: var(--color-blue);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-blue);
+  color: white;
+  border: solid 2px white;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.primary:hover,
+.circle:hover {
+  background-color: var(--color-blue-dark);
+}
