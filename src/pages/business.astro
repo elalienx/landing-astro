@@ -1,0 +1,16 @@
+---
+// Components
+import Hero from "../components/Hero"
+import IncrementalCounter from '../components/IncrementalCounter';
+import Kreddy from "../components/Kreddy"
+
+// Layouts
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<Hero/>
+	<Kreddy />
+	<IncrementalCounter client:visible label='How many companies you adquired this year?'/>
+</Layout>
+
