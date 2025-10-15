@@ -1,0 +1,21 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: green;
+  color: white;
+
+  .links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .link {
+    background-color: white;
+    text-decoration: none;
+    color: green;
+    border-radius: 8px;
+    padding: 8px;
+  }
+}
