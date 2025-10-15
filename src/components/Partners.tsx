@@ -1,10 +1,12 @@
 import { useState } from "react";
 
+import styles from "../styles/partners.module.css";
+
 export default function Partners() {
   const [showPartners, setShowPartners] = useState(false);
 
   const Logos = (
-    <div>
+    <div className={styles.logos}>
       <img src="./partners/logo-1.svg" loading="lazy" />
       <img src="./partners/logo-2.svg" loading="lazy" />
       <img src="./partners/logo-3.svg" loading="lazy" />
@@ -17,7 +19,7 @@ export default function Partners() {
   );
 
   return (
-    <section className="partners">
+    <section className={styles.partners}>
       <h2>Våra samarbetspartners</h2>
       {showPartners && Logos}
       <button onClick={() => setShowPartners(!showPartners)}>

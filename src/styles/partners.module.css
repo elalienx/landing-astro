@@ -1,0 +1,11 @@
+.partners {
+  padding: 64px 32px;
+  text-align: center;
+  background-color: aliceblue;
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+}
