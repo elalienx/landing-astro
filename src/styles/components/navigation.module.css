@@ -18,10 +18,6 @@
     color: var(--color-green-dark);
     border-radius: var(--border-radius);
     padding: var(--space-small);
-
-    &:hover {
-      background-color: azure;
-    }
   }
 
   .active {
