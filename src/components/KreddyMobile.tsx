@@ -1,6 +1,9 @@
 export default function KreddyMobile() {
   return (
-    <section>
+    <section
+      className="kreddy-mobile"
+      style={{ backgroundColor: "pink", color: "maroon" }}
+    >
       <img src="./app-banner.webp" />
       <h2>Din privatekonomi - direkt i mobilen med Kreddy</h2>
       <p>
@@ -11,8 +14,8 @@ export default function KreddyMobile() {
         med din ansökan. Allt і Kreddy-appen är gratis.
       </p>
       <h3>Ladda ner nu</h3>
-      <img src="./app-store-badge.svg" />
-      <img src="./google-play-badge.svg" />
+      <img src="./app-store-badge.svg" loading="lazy" />
+      <img src="./google-play-badge.svg" loading="lazy" />
     </section>
   );
 }

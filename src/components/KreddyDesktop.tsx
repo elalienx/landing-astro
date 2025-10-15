@@ -1,6 +1,9 @@
 export default function KreddyDesktop() {
   return (
-    <section>
+    <section
+      className="kreddy-desktop"
+      style={{ backgroundColor: "aliceblue", color: "navy" }}
+    >
       <div className="content">
         <h2>Din privatekonomi - direkt i mobilen med Kreddy</h2>
         <p>
@@ -12,11 +15,11 @@ export default function KreddyDesktop() {
         </p>
         <div className="call-to-action">
           <p>Scanna QR-koden med mobilkameran för att ladda ner appen</p>
-          <img src="./arrow.svg" />
-          <img src="./qrcode-lendose.svg" />
+          <img src="./arrow.svg" loading="lazy" />
+          <img src="./qrcode-lendose.svg" loading="lazy" />
         </div>
       </div>
-      <img src="./app-banner.webp" />
+      <img src="./app-banner.webp" loading="lazy" />
     </section>
   );
 }
