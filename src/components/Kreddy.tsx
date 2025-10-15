@@ -54,7 +54,11 @@ function Desktop() {
         <div className={styles.callToAction}>
           <p>Scanna QR-koden med mobilkameran för att ladda ner appen</p>
           <img src="./kreddy/arrow.svg" loading="lazy" />
-          <img src="./kreddy/qrcode-lendose.svg" loading="lazy" />
+          <img
+            src="./kreddy/qrcode-lendose.svg"
+            alt="QR to download the app"
+            loading="lazy"
+          />
         </div>
       </div>
 
