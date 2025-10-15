@@ -1,0 +1,11 @@
+.buttonPrimary {
+  min-height: 44px;
+  padding: var(--space-medium) var(--space-small);
+  background-color: var(--color-blue);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+}

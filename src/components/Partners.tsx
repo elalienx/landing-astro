@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import styles from "@styles/components/partners.module.css";
+import button from "@styles/components/button.module.css";
 
 export default function Partners() {
   const [showPartners, setShowPartners] = useState(false);
@@ -23,7 +24,10 @@ export default function Partners() {
       <div className={styles.content}>
         <h2>Våra samarbetspartners</h2>
         {showPartners && Logos}
-        <button onClick={() => setShowPartners(!showPartners)}>
+        <button
+          className={button.buttonPrimary}
+          onClick={() => setShowPartners(!showPartners)}
+        >
           Se fler partners
         </button>
       </div>
