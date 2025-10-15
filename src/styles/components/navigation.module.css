@@ -5,6 +5,7 @@
   padding: var(--space-small);
   background-color: var(--color-green);
   color: white;
+  font-family: var(--font-family);
 
   .links {
     display: flex;
@@ -14,8 +15,8 @@
   .link {
     background-color: white;
     text-decoration: none;
-    color: green;
-    border-radius: borderRadius;
-    padding: 8px;
+    color: var(--color-green);
+    border-radius: var(--border-radius);
+    padding: var(--space-small);
   }
 }
