@@ -2,6 +2,7 @@
 // Components
 import Hero from "../components/Hero"
 import IncrementalCounter from '../components/IncrementalCounter';
+import KreddyMobile from "../components/KreddyMobile"
 
 // Layours
 import Layout from '../layouts/Layout.astro';
@@ -10,18 +11,5 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<IncrementalCounter client:load label='How many videogames have you purchased this year?'/>
 	<Hero/>
+	<KreddyMobile/>
 </Layout>
-
-
-<style>
-.hero {
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
-
-.incremental-counter {
-  background-color: green;
-  color: white;
-}
-</style>

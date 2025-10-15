@@ -6,7 +6,6 @@ interface Props {
 }
 
 export default function IncrementalCounter({ label }: Props) {
-  // Local state
   const [value, setValue] = useState(0);
 
   return (
