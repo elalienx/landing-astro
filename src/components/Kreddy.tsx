@@ -13,7 +13,7 @@ export default function Kreddy() {
 function Mobile() {
   return (
     <section className={styles.mobile}>
-      <img src="./app-banner.webp" />
+      <img src="./kreddy/app-banner.webp" />
       <h2>Din privatekonomi - direkt i mobilen med Kreddy</h2>
       <p>
         I Lendos app, Kreddy fär du tillgàng till ditt kreditbetyg som vi
@@ -25,12 +25,12 @@ function Mobile() {
       <h3>Ladda ner nu</h3>
       <img
         className={styles.badge}
-        src="./app-store-badge.svg"
+        src="./kreddy/app-store-badge.svg"
         loading="lazy"
       />
       <img
         className={styles.badge}
-        src="./google-play-badge.svg"
+        src="./kreddy/google-play-badge.svg"
         loading="lazy"
       />
     </section>
@@ -51,11 +51,11 @@ function Desktop() {
         </p>
         <div>
           <p>Scanna QR-koden med mobilkameran för att ladda ner appen</p>
-          <img src="./arrow.svg" loading="lazy" />
-          <img src="./qrcode-lendose.svg" loading="lazy" />
+          <img src="./kreddy/arrow.svg" loading="lazy" />
+          <img src="./kreddy/qrcode-lendose.svg" loading="lazy" />
         </div>
       </div>
-      <img src="./app-banner.webp" loading="lazy" />
+      <img src="./kreddy/app-banner.webp" loading="lazy" />
     </section>
   );
 }

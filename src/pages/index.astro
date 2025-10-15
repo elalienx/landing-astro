@@ -3,6 +3,7 @@
 import Hero from "../components/Hero"
 import IncrementalCounter from '../components/IncrementalCounter';
 import Kreddy from "../components/Kreddy"
+import Partners from "../components/Partners";
 
 // Layouts
 import Layout from '../layouts/Layout.astro';
@@ -10,6 +11,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<Hero product="Consumer loans"/>
+	<Partners client:visible/>
 	<Kreddy />
 	<IncrementalCounter client:visible label='How many videogames have you purchased this year?'/>
 </Layout>
