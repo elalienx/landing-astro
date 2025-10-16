@@ -1,10 +1,9 @@
-# Astro Starter Kit: Basics
-
+# Hackathon 2025 🎃
 ```sh
-pnpm create astro@latest -- --template basics
+## Run command:
+pnpm install
+pnpm dev
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
@@ -12,8 +11,6 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
 ├── src
 │   ├── assets
 │   │   └── astro.svg
