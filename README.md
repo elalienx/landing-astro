@@ -1,4 +1,6 @@
 # Hackathon 2025 🎃
+To know about Astro, check this [100 second video!](https://youtu.be/dsTXcSeAZq8?si=5PXTrFGxC7zfm1is)
+
 
 ## 🧞 Commands
 
