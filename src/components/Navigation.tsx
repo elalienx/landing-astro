@@ -6,8 +6,8 @@ interface Props {
 
 export default function Navigation({ currentPath }: Props) {
   const consumerActive = currentPath === "/" ? styles.active : "";
-  const bussinesActive = currentPath === "/business" ? styles.active : "";
-  const mortgageActive = currentPath === "/mortgage" ? styles.active : "";
+  const bussinesActive = currentPath === "/business/" ? styles.active : "";
+  const mortgageActive = currentPath === "/mortgage/" ? styles.active : "";
 
   return (
     <nav className={styles.navigation}>
