@@ -16,8 +16,6 @@ All commands are run from the root of the project, from a terminal:
 ```text
 /
 ├── src
-│   ├── assets
-│   │   └── astro.svg
 │   ├── components
 │   │   └── Hero.tsx
 │   │   └── IncrementalCounter.tsx
