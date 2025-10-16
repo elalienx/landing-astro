@@ -15,11 +15,17 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── assets
 │   │   └── astro.svg
 │   ├── components
-│   │   └── Welcome.astro
+│   │   └── Hero.tsx
+│   │   └── IncrementalCounter.tsx
+│   │   └── Kreddy.jsx (supports both JSX and TSX)
+│   │   └── Navigation.tsx
+│   │   └── Partners.tsx
 │   ├── layouts
-│   │   └── Layout.astro
+│   │   └── Layout.astro (has the navbar)
 │   └── pages
-│       └── index.astro
+│       └── index.astro (consumer loans)
+│       └── business.astro
+│       └── mortgage.astro
 └── package.json
 ```
 
