@@ -1,17 +1,17 @@
 # Hackathon 2025 🎃
-To know about Astro, check this [100 second video!](https://youtu.be/dsTXcSeAZq8?si=5PXTrFGxC7zfm1is)
 
+To know about Astro, check this [100 second video!](https://youtu.be/dsTXcSeAZq8?si=5PXTrFGxC7zfm1is)
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
+| Command        | Action                                       |
+| :------------- | :------------------------------------------- |
+| `pnpm install` | Installs dependencies                        |
+| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
+| `pnpm build`   | Build your production site to `./dist/`      |
+| `pnpm preview` | Preview your build locally, before deploying |
 
 ## 🚀 Project Structure
 
@@ -24,6 +24,10 @@ All commands are run from the root of the project, from a terminal:
 │   │   └── Kreddy.jsx (supports both JSX and TSX)
 │   │   └── Navigation.tsx
 │   │   └── Partners.tsx
+│   ├── forms
+│   │   └── BusinessForm.tsx
+│   │   └── ConsumerForm.tsx
+│   │   └── MortgageForm.tsx
 │   ├── layouts
 │   │   └── Layout.astro (has the navbar)
 │   └── pages
@@ -35,7 +39,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## 🧑‍💻 Client directives
 
-These are the flags you pass to the main page to decide when to make your React components interactive:
+These are the flags you pass to the pages to decide when to make your React components interactive:
 
 1. `client:load`: Hydrates the component as soon as the page loads.
 1. `client:visible`: Hydrates the component when it becomes visible in the viewport.
