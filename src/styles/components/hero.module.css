@@ -1,8 +1,38 @@
 .hero {
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: var(--space-big);
   background-color: var(--color-black);
   color: white;
   text-align: center;
+
+  .container {
+    width: 100%;
+    max-width: 960px;
+    display: grid;
+    align-items: center;
+    gap: var(--space-big);
+  }
+
+  .form {
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+  }
+}
+
+/* Desktop: text on the left, form on the right */
+@media (min-width: 750px) {
+  .hero {
+    text-align: left;
+
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+      justify-self: end;
+    }
+  }
 }

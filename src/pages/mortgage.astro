@@ -1,6 +1,7 @@
 ---
 // Components
 import Hero from "@components/Hero"
+import MortgageForm from "@forms/MortgageForm";
 import IncrementalCounter from '@components/IncrementalCounter';
 import Kreddy from "@components/Kreddy"
 
@@ -9,7 +10,9 @@ import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout>
-	<Hero product="Mortgage"/>
+	<Hero product="Mortgage">
+		<MortgageForm client:load />
+	</Hero>
 	<Kreddy />
 	<IncrementalCounter client:visible label='How many companies you adquired this year?'/>
 </Layout>

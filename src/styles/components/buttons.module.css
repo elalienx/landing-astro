@@ -21,6 +21,14 @@
   font-weight: 700;
 }
 
+/* Modifier: combine with .primary for a full-width call to action. */
+.big {
+  width: 100%;
+  min-height: 56px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .primary:hover,
 .circle:hover {
   background-color: var(--color-blue-dark);
