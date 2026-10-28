@@ -16,7 +16,19 @@ const FRAMEWORKS = [
   {
     name: "Astro",
     logo: "/about/astro.svg",
-    description: "Also new, with a stellar security track record.",
+    description: (
+      <>
+        Also new, with a stellar security track record (
+        <a
+          href="https://pulse.adyog.com/compare/astro-vs-nextjs"
+          target="_blank"
+          rel="noreferrer"
+        >
+          link
+        </a>
+        ).
+      </>
+    ),
   },
 ];
 
