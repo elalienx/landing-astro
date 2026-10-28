@@ -1,4 +1,5 @@
 import styles from "@styles/components/why-astro.module.css";
+import { withBase } from "@utils/url";
 
 const FRAMEWORKS = [
   {
@@ -27,7 +28,11 @@ export default function WhyAstro() {
         <div className={styles.columns}>
           {FRAMEWORKS.map(({ name, logo, description }) => (
             <article key={name} className={styles.card}>
-              <img className={styles.logo} src={logo} alt={`${name} logo`} />
+              <img
+                className={styles.logo}
+                src={withBase(logo)}
+                alt={`${name} logo`}
+              />
               <h3>{name}</h3>
               <p>{description}</p>
             </article>

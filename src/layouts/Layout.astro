@@ -2,6 +2,9 @@
 // Components
 import Navigation from "../components/Navigation"
 
+// Utils
+import { withBase } from "@utils/url"
+
 // Styles
 import "@styles/style.css"
 ---
@@ -11,7 +14,7 @@ import "@styles/style.css"
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Landing</title>
 	</head>

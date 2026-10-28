@@ -1,4 +1,5 @@
 import styles from "@styles/components/astro-toolbar.module.css";
+import { withBase } from "@utils/url";
 
 // Icons are taken from Astro's own toolbar (node_modules/astro/dist/runtime/client/dev-toolbar).
 const FEATURES = [
@@ -42,7 +43,7 @@ export default function AstroToolbar() {
           <ul className={styles.features}>
             {FEATURES.map(({ name, icon, description }) => (
               <li key={name} className={styles.feature}>
-                <img className={styles.icon} src={icon} alt="" />
+                <img className={styles.icon} src={withBase(icon)} alt="" />
                 <p>
                   <strong>{name}:</strong> {description}
                 </p>
@@ -52,7 +53,7 @@ export default function AstroToolbar() {
         </div>
         <img
           className={styles.image}
-          src="/about/toolbar.png"
+          src={withBase("/about/toolbar.png")}
           alt="The Astro toolbar with its Menu, Inspect, Audit, and Settings buttons"
           loading="lazy"
         />

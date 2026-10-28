@@ -2,16 +2,17 @@ import { useState } from "react";
 
 import styles from "@styles/components/partners.module.css";
 import buttons from "@styles/components/buttons.module.css";
+import { withBase } from "@utils/url";
 
 const LOGOS = [
-  "./partners/logo-1.svg",
-  "./partners/logo-2.svg",
-  "./partners/logo-3.svg",
-  "./partners/logo-4.svg",
-  "./partners/logo-5.svg",
-  "./partners/logo-6.svg",
-  "./partners/logo-7.svg",
-  "./partners/logo-8.svg",
+  "/partners/logo-1.svg",
+  "/partners/logo-2.svg",
+  "/partners/logo-3.svg",
+  "/partners/logo-4.svg",
+  "/partners/logo-5.svg",
+  "/partners/logo-6.svg",
+  "/partners/logo-7.svg",
+  "/partners/logo-8.svg",
 ];
 
 // Matches the column count of .logos in partners.module.css.
@@ -28,7 +29,7 @@ export default function Partners() {
         <h2>Våra samarbetspartners</h2>
         <div className={styles.logos}>
           {visibleLogos.map((src) => (
-            <img key={src} src={src} loading="lazy" />
+            <img key={src} src={withBase(src)} loading="lazy" />
           ))}
         </div>
         <button
