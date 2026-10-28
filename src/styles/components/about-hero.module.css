@@ -1,0 +1,19 @@
+.hero {
+  display: grid;
+  place-items: center;
+  gap: var(--space-big);
+  min-height: 60vh;
+  padding: 64px 32px;
+  background-color: var(--color-black);
+  color: white;
+  text-align: center;
+
+  .logo {
+    width: 96px;
+    height: 96px;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+}

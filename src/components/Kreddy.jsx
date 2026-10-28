@@ -52,7 +52,10 @@ function Desktop() {
 
         {/* Call to Action */}
         <div className={styles.callToAction}>
-          <p>Scanna QR-koden med mobilkameran för att ladda ner appen</p>
+          <p>
+            Scanna QR-koden med mobilkameran för att ladda ner appen (
+            <a href="/about">learn more</a>)
+          </p>
           <img src="./kreddy/arrow.svg" loading="lazy" />
           <img
             src="./kreddy/qrcode-lendose.svg"

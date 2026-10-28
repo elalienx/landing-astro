@@ -1,0 +1,46 @@
+.directives {
+  padding: 64px 32px;
+  background-color: white;
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Lets the table scroll sideways on small screens instead of overflowing the page */
+  .tableWrapper {
+    margin-top: var(--space-big);
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: var(--space-medium);
+    vertical-align: top;
+  }
+
+  th {
+    background-color: var(--color-black);
+    color: white;
+    font-weight: var(--font-weight-bold);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(--color-page-background);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  code {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,53 @@
+.toolbar {
+  padding: 64px 32px;
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    gap: var(--space-big);
+  }
+
+  .image {
+    justify-self: center;
+    width: 100%;
+    max-width: 376px;
+    height: auto;
+  }
+
+  .features {
+    display: grid;
+    gap: var(--space-medium);
+    margin: var(--space-big) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: var(--space-medium);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Dark tile so the white icons look like they do in the toolbar */
+  .icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+  }
+}
+
+/* Desktop: text on the left, image on the right. The text gets more room as the image is small. */
+@media (min-width: 750px) {
+  .toolbar .content {
+    grid-template-columns: 3fr 2fr;
+  }
+}
