@@ -50,7 +50,11 @@ export default function AstroDirectives() {
                 <tr key={name}>
                   <td>
                     {/* The docs anchors drop the colon, e.g. #clientload */}
-                    <a href={`${DOCS_URL}#${name.replace(":", "")}`}>
+                    <a
+                      href={`${DOCS_URL}#${name.replace(":", "")}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <code>{name}</code>
                     </a>
                   </td>
