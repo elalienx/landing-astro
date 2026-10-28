@@ -1,17 +1,19 @@
 # Hackathon 2025 🎃
 
+See it live at [elalienx.github.io/landing-astro](https://elalienx.github.io/landing-astro/)
+
 To know about Astro, check this [100 second video!](https://youtu.be/dsTXcSeAZq8?si=5PXTrFGxC7zfm1is)
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm install` | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
+| Command        | Action                                                    |
+| :------------- | :-------------------------------------------------------- |
+| `pnpm install` | Installs dependencies                                     |
+| `pnpm dev`     | Starts local dev server at `localhost:4321/landing-astro` |
+| `pnpm build`   | Build your production site to `./dist/`                   |
+| `pnpm preview` | Preview your build locally, before deploying              |
 
 ## 🚀 Project Structure
 
