@@ -11,16 +11,6 @@ export default function BusinessForm() {
 
   return (
     <form className={styles.form} onSubmit={onSubmit}>
-      <label className={styles.field}>
-        Company name
-        <input
-          name="companyName"
-          autoComplete="organization"
-          placeholder="Clar"
-          required
-        />
-      </label>
-
       <fieldset className={styles.options}>
         <legend>Company type</legend>
         <label>
@@ -32,6 +22,16 @@ export default function BusinessForm() {
           Sole trader
         </label>
       </fieldset>
+
+      <label className={styles.field}>
+        Company name
+        <input
+          name="companyName"
+          autoComplete="organization"
+          placeholder="Clar"
+          required
+        />
+      </label>
 
       <button type="submit" className={`${buttons.primary} ${buttons.big}`}>
         Submit
