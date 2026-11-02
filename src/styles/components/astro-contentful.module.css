@@ -1,0 +1,38 @@
+.astroContentful {
+  padding: 64px 32px;
+  background-color: white;
+  text-align: center;
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .columns {
+    display: grid;
+    gap: var(--space-big);
+  }
+
+  /* Grey card so it stands out from the white section */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-medium);
+    padding: var(--space-big);
+    background-color: var(--color-page-background);
+    border-radius: var(--border-radius);
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* Desktop: Astro on the left, Contentful on the right */
+@media (min-width: 750px) {
+  .astroContentful .columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
