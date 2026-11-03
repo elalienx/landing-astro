@@ -1,5 +1,4 @@
 import styles from "@styles/components/kredy.module.css";
-import { withBase } from "@utils/url";
 
 export default function Kreddy() {
   return (
@@ -14,7 +13,7 @@ export default function Kreddy() {
 function Mobile() {
   return (
     <section className={styles.mobile}>
-      <img src={withBase("/kreddy/app-banner.webp")} />
+      <img src="/kreddy/app-banner.webp" />
       <h2>Din privatekonomi - direkt i mobilen med Kreddy</h2>
       <p>
         I Lendos app, Kreddy fär du tillgàng till ditt kreditbetyg som vi
@@ -26,12 +25,12 @@ function Mobile() {
       <h3>Ladda ner nu</h3>
       <img
         className={styles.badge}
-        src={withBase("/kreddy/app-store-badge.svg")}
+        src="/kreddy/app-store-badge.svg"
         loading="lazy"
       />
       <img
         className={styles.badge}
-        src={withBase("/kreddy/google-play-badge.svg")}
+        src="/kreddy/google-play-badge.svg"
         loading="lazy"
       />
     </section>
@@ -56,9 +55,9 @@ function Desktop() {
           <p>
             Scanna QR-koden med mobilkameran för att ladda ner appen
           </p>
-          <img src={withBase("/kreddy/arrow.svg")} loading="lazy" />
+          <img src="/kreddy/arrow.svg" loading="lazy" />
           <img
-            src={withBase("/kreddy/qrcode-lendose.svg")}
+            src="/kreddy/qrcode-lendose.svg"
             alt="QR to download the app"
             loading="lazy"
           />
@@ -68,7 +67,7 @@ function Desktop() {
       {/* Image */}
       <img
         className={styles.image}
-        src={withBase("/kreddy/app-banner.webp")}
+        src="/kreddy/app-banner.webp"
         loading="lazy"
       />
     </section>

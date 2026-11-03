@@ -10,7 +10,6 @@
       "@forms/*": ["./src/forms/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@styles/*": ["./src/styles/*"],
-      "@utils/*": ["./src/utils/*"]
     }
   }
 }

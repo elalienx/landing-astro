@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 
 import styles from "@styles/components/hero.module.css";
-import { withBase } from "@utils/url";
 
 interface Props {
   product: string;
@@ -21,7 +20,7 @@ export default function Hero({ product, children }: Props) {
           </p>
           <p>Hackathon 2025 🎃</p>
           <p>
-            (<a href={withBase("/about")}>learn more</a>)
+            (<a href="/about">learn more</a>)
           </p>
         </div>
         <div className={styles.form}>{children}</div>
