@@ -21,16 +21,10 @@ export default function Navigation({ currentPath }: Props) {
         <a href="/" className={`${styles.link} ${consumerActive}`}>
           Privat
         </a>
-        <a
-          href="/business"
-          className={`${styles.link} ${bussinesActive}`}
-        >
+        <a href="/business" className={`${styles.link} ${bussinesActive}`}>
           Foregslatan
         </a>
-        <a
-          href="/mortgage"
-          className={`${styles.link} ${mortgageActive}`}
-        >
+        <a href="/mortgage" className={`${styles.link} ${mortgageActive}`}>
           Bolan
         </a>
       </div>
