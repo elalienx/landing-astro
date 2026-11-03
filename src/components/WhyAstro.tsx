@@ -1,5 +1,4 @@
 import styles from "@styles/components/why-astro.module.css";
-import { withBase } from "@utils/url";
 
 const FRAMEWORKS = [
   {
@@ -42,7 +41,7 @@ export default function WhyAstro() {
             <article key={name} className={styles.card}>
               <img
                 className={styles.logo}
-                src={withBase(logo)}
+                src={logo}
                 alt={`${name} logo`}
               />
               <h3>{name}</h3>

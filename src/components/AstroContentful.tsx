@@ -1,5 +1,4 @@
 import styles from "@styles/components/astro-contentful.module.css";
-import { withBase } from "@utils/url";
 
 // Contentful logo from Simple Icons (https://simpleicons.org, CC0).
 const GUIDES = [
@@ -31,7 +30,7 @@ export default function AstroContentful() {
             <article key={name} className={styles.card}>
               <img
                 className={styles.logo}
-                src={withBase(logo)}
+                src={logo}
                 alt={`${name} logo`}
               />
               <a href={url} target="_blank" rel="noreferrer">

@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 
 import styles from "@styles/components/partytown.module.css";
-import { withBase } from "@utils/url";
 
 // Logo from the Partytown docs (https://partytown.qwik.dev, MIT).
 // Icons adapted from Feather (https://feathericons.com, MIT).
@@ -51,7 +50,7 @@ export default function Partytown() {
         <div>
           <img
             className={styles.logo}
-            src={withBase("/about/partytown-logo.svg")}
+            src="/about/partytown-logo.svg"
             alt="Partytown logo"
           />
           <h2>Partytown</h2>
@@ -64,7 +63,7 @@ export default function Partytown() {
         <ul className={styles.features}>
           {FEATURES.map(({ name, icon, description }) => (
             <li key={name} className={styles.feature}>
-              <img className={styles.icon} src={withBase(icon)} alt="" />
+              <img className={styles.icon} src={icon} alt="" />
               <p>
                 <strong>{name}:</strong> {description}
               </p>
