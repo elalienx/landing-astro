@@ -33,3 +33,25 @@
 .circle:hover {
   background-color: var(--color-blue-dark);
 }
+
+/* Outlined button with an optional trailing icon (e.g. "Se fler partners +"). */
+.outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-medium);
+  min-height: 56px;
+  padding: var(--space-medium) var(--space-big);
+  background-color: white;
+  color: var(--color-black);
+  border: solid 1px var(--color-gray);
+  border-radius: var(--space-small);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.outline:hover {
+  background-color: var(--color-page-background);
+}
