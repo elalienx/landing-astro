@@ -16,7 +16,13 @@ export default function Navigation({ currentPath }: Props) {
 
   return (
     <nav className={styles.navigation}>
-      <img src="/logo.svg" width={116} height={42} alt="Lendo" />
+      <img
+        className={styles.logo}
+        src="/logo.svg"
+        width={116}
+        height={42}
+        alt="Lendo"
+      />
       <div className={styles.links}>
         <a href="/" className={`${styles.link} ${consumerActive}`}>
           Privat
@@ -28,8 +34,11 @@ export default function Navigation({ currentPath }: Props) {
           Bolan
         </a>
       </div>
-      <a href="https://inbox.lendo.se" className={styles.link}>
-        Logga in 🔐
+      <a
+        href="https://inbox.lendo.se"
+        className={`${styles.link} ${styles.login}`}
+      >
+        Logga in
       </a>
     </nav>
   );
