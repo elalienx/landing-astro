@@ -49,7 +49,6 @@ export default function AstroDirectives() {
               {DIRECTIVES.map(({ name, category, description }) => (
                 <tr key={name}>
                   <td>
-                    {/* The docs anchors drop the colon, e.g. #clientload */}
                     <a
                       href={`${DOCS_URL}#${name.replace(":", "")}`}
                       target="_blank"

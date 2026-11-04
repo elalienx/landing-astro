@@ -14,10 +14,7 @@ export default function IncrementalCounter({ label }: Props) {
   return (
     <section className={styles.incrementalCounter}>
       <div className={styles.content}>
-        {/* Title */}
         <span>{label}</span>
-
-        {/* Controls */}
         <div className={styles.controls}>
           <button
             className={buttons.circle}

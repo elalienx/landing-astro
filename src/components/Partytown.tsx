@@ -2,8 +2,6 @@ import type { ReactNode } from "react";
 
 import styles from "@styles/components/partytown.module.css";
 
-// Logo from the Partytown docs (https://partytown.qwik.dev, MIT).
-// Icons adapted from Feather (https://feathericons.com, MIT).
 const FEATURES: { name: string; icon: string; description: ReactNode }[] = [
   {
     name: "Setup",

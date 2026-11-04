@@ -10,7 +10,8 @@ const FRAMEWORKS = [
   {
     name: "Next.js",
     logo: "/about/nextjs.svg",
-    description: "Newer framework, faster, but with less of a security track record.",
+    description:
+      "Newer framework, faster, but with less of a security track record.",
   },
   {
     name: "Astro",
@@ -39,11 +40,7 @@ export default function WhyAstro() {
         <div className={styles.columns}>
           {FRAMEWORKS.map(({ name, logo, description }) => (
             <article key={name} className={styles.card}>
-              <img
-                className={styles.logo}
-                src={logo}
-                alt={`${name} logo`}
-              />
+              <img className={styles.logo} src={logo} alt={`${name} logo`} />
               <h3>{name}</h3>
               <p>{description}</p>
             </article>

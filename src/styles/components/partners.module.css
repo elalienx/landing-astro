@@ -8,11 +8,36 @@
     margin: 0 auto;
   }
 
+  /* Mobile: 3 columns, first 2 rows visible when collapsed. */
   .logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-big) 8px;
+    align-items: center;
     justify-items: center;
     margin-bottom: var(--space-big);
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .collapsed img:nth-child(n + 7) {
+    display: none;
+  }
+}
+
+/* Tablet/desktop: 4 columns, first row visible when collapsed. */
+@media (min-width: 750px) {
+  .partners {
+    .logos {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .collapsed img:nth-child(n + 5) {
+      display: none;
+    }
   }
 }

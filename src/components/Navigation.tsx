@@ -5,11 +5,9 @@ interface Props {
 }
 
 export default function Navigation({ currentPath }: Props) {
-  // Ignore trailing slashes so "/business" and "/business/" both match
   const trimSlash = (path: string) => path.replace(/\/$/, "");
   const activeClass = (path: string) =>
     trimSlash(currentPath) === trimSlash(path) ? styles.active : "";
-
   const consumerActive = activeClass("/");
   const bussinesActive = activeClass("/business");
   const mortgageActive = activeClass("/mortgage");

@@ -4,6 +4,7 @@ import styles from "@styles/components/hero.module.css";
 
 interface Props {
   product: string;
+
   /** The form shown on the right side of the hero. */
   children: ReactNode;
 }

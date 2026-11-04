@@ -21,10 +21,10 @@ export default function AICosts() {
               <strong>$3.14</strong>, about 14% more.
             </p>
             <p>
-              Astro was also the fastest to build, with a median of 8.2
-              minutes, and its app sent almost no JavaScript to the browser,
-              compared to 142 KB for Next.js. For teams using AI to ship
-              features, that adds up to real savings.{" "}
+              Astro was also the fastest to build, with a median of 8.2 minutes,
+              and its app sent almost no JavaScript to the browser, compared to
+              142 KB for Next.js. For teams using AI to ship features, that adds
+              up to real savings.{" "}
               <a
                 href="https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
                 target="_blank"

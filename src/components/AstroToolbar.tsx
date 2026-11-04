@@ -1,6 +1,5 @@
 import styles from "@styles/components/astro-toolbar.module.css";
 
-// Icons are taken from Astro's own toolbar (node_modules/astro/dist/runtime/client/dev-toolbar).
 const FEATURES = [
   {
     name: "Menu",
