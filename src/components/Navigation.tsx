@@ -14,13 +14,9 @@ export default function Navigation({ currentPath }: Props) {
 
   return (
     <nav className={styles.navigation}>
-      <img
-        className={styles.logo}
-        src="/logo.svg"
-        width={116}
-        height={42}
-        alt="Lendo"
-      />
+      <a href="/" className={styles.logo}>
+        <img src="/logo.svg" width={116} height={42} alt="Lendo" />
+      </a>
       <div className={styles.links}>
         <a href="/" className={`${styles.link} ${consumerActive}`}>
           Privat
